@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex use</title>
+
+    <script src="https://kit.fontawesome.com/78ba707518.js" crossorigin="anonymous">
+    </script>
+
+    <style>
+        .login-main {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 200px;
+        }
+
+        .log-in {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .log-in input,
+        button {
+            font-size: 1.5em;
+            margin-top: 10px;
+            padding-left: 10px;
+            border-radius: 5px;
+            border: 1px solid lightgreen;
+        }
+
+        .log-in button {
+            background-color: coral;
+            color: whitesmoke;
+            border: 0px;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        #nav-change-1 {
+            order: 2;
+        }
+
+        #nav-change-2 {
+            order: 1;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span><a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Orders</a>
+                <a href="">About us</a>
+            </span>
+
+            <span>
+                <a href=""><i class="fa-solid fa-user"></i>log in</a>
+                <a href=""><i class="fa-solid fa-right-to-bracket"></i>Sign Out</a>
+            </span>
+        </nav>
+    </header>
+    <section class="login-main">
+        <form action="" class="log-in">
+            <h1>login</h1>
+            <input type="email" name="email" id="" placeholder="Your Email">
+
+            <input type="password" name="password" id="" placeholder="Your Password">
+            <button type="submit">Login</button>
+
+        </form>
+    </section>
+
+    <h1>login form 2</h1>
+    <header>
+        <nav>
+            <span id="nav-change-1">
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Orders</a>
+                <a href="">About us</a>
+            </span>
+
+            <span id="nav-change-2">
+
+                <a href=""><i class="fa-solid fa-user"></i>log in</a>
+                <a href=""><i class="fa-solid fa-right-to-bracket"></i>Sign Out</a>
+            </span>
+        </nav>
+    </header>
+
+
+    <section class="login-main">
+        <form action="" class="log-in">
+            <h1>login</h1>
+            <input type="email" name="email" id="" placeholder="Your Email">
+
+            <input type="password" name="password" id="" placeholder="Your Password">
+            <button type="submit">Login</button>
+
+        </form>
+    </section>
+
+    <br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

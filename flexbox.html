@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box class</title>
+    <style>
+        .contioner {
+            border: 2px dashed goldenrod;
+            display: flex;
+            height: 200px;
+            width: 800px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .div {
+            border: 1px dotted blueviolet;
+            height: 100px;
+            width: 80px;
+        }
+
+        .contioner1 {
+            border: 2px dashed goldenrod;
+            display: flex;
+            height: 200px;
+            width: 800px;
+            justify-content: center;
+            align-items: stretch;
+
+        }
+
+        .div1 {
+            border: 1px solid rgb(235, 23, 8);
+            width: 80px;
+        }
+
+        #box1 {
+
+            /* order: 2; */
+        }
+
+        #box2 {
+            /* order: 1; */
+            flex-grow: 1;
+        }
+    </style> 
+</head>
+
+<body>
+    <h1>my flexbox class</h1>
+
+    <div class="contioner">
+
+        <div class="div">box-1</div>
+        <div class="div">box-2</div>
+        <div class="div">box-3</div>
+        <div class="div">box-4</div>
+
+    </div>
+    <br>
+
+    <h1>new flex box</h1>
+    <div class="contioner1">
+
+        <div id="box1" class="div1">box-1
+            my nav bar deatials.
+        </div>
+        <div id="box2" class="div1">box-2
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt dolorum nobis dolore repellat,
+            omnis sed beatae quibusdam dolores aliquid optio fugiat ipsam, nisi perferendis voluptates? Excepturi
+            officia fuga eius at recusandae explicabo repudiandae aut perferendis quidem? Distinctio, unde asperiores
+            reiciendis explicabo quis itaque cupiditate vel repellat aspernatur est sunt!
+        </div>
+
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
